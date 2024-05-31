@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#":{
+      "item": "thecondimentmod:mayo"
+    }
+  },
+  "result": {
+    "item": "thecondimentmod:mayo_block"
+  }
+}
