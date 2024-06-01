@@ -1,8 +1,0 @@
-{
-  "parent": "forge/block/fluid/base",
-  "textures": {
-    "particle": "thecondimentmod:block/mayo_block",
-    "still": "thecondimentmod:block/mayo_block",
-    "flow": "thecondimentmod:block/mayo_liquid"
-  }
-}

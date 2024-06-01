@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "thecondimentmod:item/mayo_mace_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "thecondimentmod:item/mayo_mace_2d"
+    }
+  },
+  "ground": {
+    "parent": "thecondimentmod:item/mayo_mace_2d"
+  },
+  "fixed": {
+    "parent": "thecondimentmod:item/mayo_mace_2d"
+  }
+}

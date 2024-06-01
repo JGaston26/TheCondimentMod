@@ -1,6 +1,9 @@
 {
   "item.thecondimentmod.mayo": "Mayo",
   "item.thecondimentmod.bucket_o_mayo": "Bucket O' Mayonnaise",
+  "item.thecondimentmod.red_pepper": "Red Pepper",
+  "item.thecondimentmod.smoked_red_pepper": "Smoked Red Pepper",
+  "item.thecondimentmod.mayo_mace": "Mayo Mace",
   "block.thecondimentmod.mayo_block": "Block O'  Mayonnaise",
   "creative.condiment_mod_tab": "Condiment Mod Tab"
 }

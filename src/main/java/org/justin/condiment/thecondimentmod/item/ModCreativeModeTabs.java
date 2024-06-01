@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                         p_259752_.accept(ModItems.MAYO.get());
                         p_259752_.accept(ModBlock.MAYO_BLOCK.get());
                         p_259752_.accept(ModItems.BUCKET_O_MAYO.get());
+                        p_259752_.accept(ModItems.RED_PEPPER.get());
+                        p_259752_.accept(ModItems.MAYO_MACE.get() );
                     })
                     .build());
     public static void register(IEventBus eventBus){
