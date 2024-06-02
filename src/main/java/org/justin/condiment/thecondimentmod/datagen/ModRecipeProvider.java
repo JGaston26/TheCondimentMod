@@ -1,8 +1,10 @@
 package org.justin.condiment.thecondimentmod.datagen;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -37,6 +39,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.MAYO.get(),9)
                 .requires(ModBlock.MAYO_BLOCK.get())
                 .unlockedBy(getHasName(ModBlock.MAYO_BLOCK.get()),has(ModBlock.MAYO_BLOCK.get()));
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.MAYO.get())
+                .pattern("-E-")
+                .pattern("-G-")
+                .pattern("-W-")
+                .define('E', Items.EGG.asItem())
+                .define('G',Items.GLOW_BERRIES.asItem())
+                .define('W',Items.WATER_BUCKET.asItem())
+                .unlockedBy(getHasName(ModItems.MAYO.get()),has(ModItems.MAYO.get()));
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {
         oreCooking(p_250654_, RecipeSerializer.SMELTING_RECIPE, p_250172_, p_250588_, p_251868_, p_250789_, p_252144_, p_251687_, "_from_smelting");

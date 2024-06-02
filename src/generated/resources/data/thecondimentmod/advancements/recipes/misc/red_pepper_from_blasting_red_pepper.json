@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_pepper": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thecondimentmod:red_pepper"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thecondimentmod:red_pepper_from_blasting_red_pepper"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_red_pepper",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thecondimentmod:red_pepper_from_blasting_red_pepper"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "smokedredpepper",
+  "ingredient": {
+    "item": "thecondimentmod:red_pepper"
+  },
+  "result": "thecondimentmod:red_pepper"
+}

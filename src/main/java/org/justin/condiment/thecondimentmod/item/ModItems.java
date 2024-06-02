@@ -1,5 +1,6 @@
 package org.justin.condiment.thecondimentmod.item;
 
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
@@ -22,8 +23,16 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.PEPPER)));
     public static final RegistryObject<Item> BUCKET_O_MAYO = Items.register("bucket_o_mayo",
             ()-> new BucketItem(ModFluid.SOURCE_MAYO_LIQUID, new Item.Properties()));
-    public static final RegistryObject<Item> MAYO_MACE = Items.register("mayo_mace",
+    public static final RegistryObject<Item> MAYO_MACE = Items.register("a_mayo_mace",
             () -> new SwordItem(ModToolTiers.MAYO,8,2,new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> MAYO_HELM = Items.register("mayo_helmet",
+            () -> new ArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> MAYO_CHEST = Items.register("mayo_chest",
+            () -> new ArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> MAYO_LEGS = Items.register("mayo_leggings",
+            () -> new ArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> MAYO_BOOTS = Items.register("mayo_boots",
+            () -> new ArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.BOOTS, new Item.Properties()));
     public static void register(IEventBus eventBus){
         Items.register(eventBus);
     }
