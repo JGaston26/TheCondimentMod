@@ -31,24 +31,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> p_251297_) {
         //Smelting,Blasting,and Cooking recipes
+
         //oreBlasting(p_251297_,RED_PEPPER_SMELTABLES,RecipeCategory.MISC,ModItems.RED_PEPPER.get(),0.25f,100,"smoked_red_pepper");
         //oreSmelting(p_251297_,RED_PEPPER_SMELTABLES,RecipeCategory.MISC,ModItems.RED_PEPPER.get(),0.25f,200,"smoked_red_pepper");
-        smokerRecipies(p_251297_, Ingredient.of(ModItems.RED_PEPPER.get()), RecipeCategory.FOOD, ModItems.SMOKED_RED_PEPPER.get(), 0.35f, 100, "smoked_red_pepper");
-        smeltingRecipies(p_251297_, Ingredient.of(ModItems.RED_PEPPER.get()), RecipeCategory.FOOD, ModItems.SMOKED_RED_PEPPER.get(), 0.35f, 200, "smoked_red_pepper");
 
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.RED_PEPPER.get()),
+                RecipeCategory.FOOD,ModItems.SMOKED_RED_PEPPER.get(),
+                0.35f,100).unlockedBy("has_red_pepper", has(ModItems.RED_PEPPER.get()))
+                .save(p_251297_,TheCondimentMod.MODID + "smoked_red_pepper_from_smoking" );
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ModItems.RED_PEPPER.get()),
+                        RecipeCategory.FOOD,ModItems.SMOKED_RED_PEPPER.get(),
+                        0.35f,150).unlockedBy("has_red_pepper", has(ModItems.RED_PEPPER.get()))
+                .save(p_251297_,TheCondimentMod.MODID + "smoked_red_pepper_from_campfire" );
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RED_PEPPER.get()),
+                        RecipeCategory.FOOD,ModItems.SMOKED_RED_PEPPER.get(),
+                        0.35f,200).unlockedBy("has_red_pepper", has(ModItems.RED_PEPPER.get()))
+                .save(p_251297_,TheCondimentMod.MODID + "smoked_red_pepper_from_smelting");
+
+        //Crusting Table Recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.MAYO_BLOCK.get())
                 .pattern("MMM")
                 .pattern("MMM")
                 .pattern("MMM")
                 .define('M',ModItems.MAYO.get())
                 .unlockedBy(getHasName(ModItems.MAYO.get()),has(ModItems.MAYO.get()))
-                .save(p_251297_, TheCondimentMod.MODID + "mayo_block");
+                .save(p_251297_ , TheCondimentMod.MODID + "mayo_block");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.MAYO.get(),9)
                 .requires(ModBlock.MAYO_BLOCK.get())
                 .unlockedBy(getHasName(ModBlock.MAYO_BLOCK.get()),has(ModBlock.MAYO_BLOCK.get()))
                 .save(p_251297_,TheCondimentMod.MODID + "mayo_from_mayo_block");
-
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.MAYO.get(),1)
                 .requires(Items.EGG)
                 .requires(Items.GLOW_BERRIES)
@@ -107,25 +119,5 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), p_251154_, p_250066_, p_251871_, p_251316_, p_251817_).group(p_251450_).unlockedBy(getHasName(itemlike), has(itemlike)).save(p_250791_, TheCondimentMod.MODID + ":" +(p_250066_) + p_249236_ + "_" + getItemName(itemlike));
         }
     }
-    protected static void smokerRecipies(Consumer<FinishedRecipe> consumer, Ingredient ingredient, RecipeCategory category, ItemLike result, float experience, int cookingTime, String group) {
-        SimpleCookingRecipeBuilder.generic(ingredient, category, result, experience, cookingTime, RecipeSerializer.SMOKING_RECIPE)
-                .group(group)
-                .unlockedBy("has_" + getItemName(ingredient.getItems()[0].getItem()), has(ingredient.getItems()[0].getItem()))
-                .save(consumer, TheCondimentMod.MODID + ":" + getItemName(result) + "_smoking");
-    }
-    protected static void smeltingRecipies(Consumer<FinishedRecipe> consumer, Ingredient ingredient, RecipeCategory category, ItemLike result, float experience, int cookingTime, String group) {
-        SimpleCookingRecipeBuilder.generic(ingredient, category, result, experience, cookingTime, RecipeSerializer.SMOKING_RECIPE)
-                .group(group)
-                .unlockedBy("has_" + getItemName(ingredient.getItems()[0].getItem()), has(ingredient.getItems()[0].getItem()))
-                .save(consumer, TheCondimentMod.MODID + ":" + getItemName(result) + "_smelting");
-    }
-    /*
-    protected static void cookRecipes(Consumer<FinishedRecipe> p_126007_, String p_126008_, RecipeSerializer<? extends AbstractCookingRecipe> p_250529_, int p_126010_) {
-        modCookingRecipe(p_126007_, p_126008_, p_250529_, p_126010_, ModItems.RED_PEPPER,ModItems.SMOKED_RED_PEPPER,0.35F);
-    }
-    protected static void modCookingRecipe(Consumer<FinishedRecipe> p_249398_, String p_249709_, RecipeSerializer<? extends AbstractCookingRecipe> p_251876_, int p_249258_, ItemLike p_250669_, ItemLike p_250224_, float p_252138_) {
-        SimpleCookingRecipeBuilder.generic(Ingredient.of(p_250669_), RecipeCategory.FOOD, p_250224_, p_252138_, p_249258_, p_251876_).unlockedBy(getHasName(p_250669_), has(p_250669_)).save(p_249398_, getItemName(p_250224_) + "_from_" + p_249709_);
-    }
 
-     */
 }
