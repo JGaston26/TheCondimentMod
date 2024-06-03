@@ -25,6 +25,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.PEPPER)));
     public static final RegistryObject<Item> BUCKET_O_MAYO = Items.register("bucket_o_mayo",
             ()-> new BucketItem(ModFluid.SOURCE_MAYO_LIQUID, new Item.Properties()));
+    public static final RegistryObject<Item> PEPPER_PIKE = Items.register("pepper_pike",
+            () -> new SwordItem(ModToolTiers.PEPPER,7,1,new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> MAYO_MACE = Items.register("a_mayo_mace",
             () -> new SwordItem(ModToolTiers.MAYO,8,2,new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> MAYO_HELM = Items.register("mayo_helmet",

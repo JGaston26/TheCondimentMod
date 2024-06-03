@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "thecondimentmod:item/pepper_pike_2d"
+  }
+}

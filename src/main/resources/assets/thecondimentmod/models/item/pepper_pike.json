@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "thecondimentmod:item/pepper_pike_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "thecondimentmod:item/pepper_pike_2d"
+    }
+  },
+  "ground": {
+    "parent": "thecondimentmod:item/pepper_pike_2d"
+  },
+  "fixed": {
+    "parent": "thecondimentmod:item/pepper_pike_2d"
+  }
+}

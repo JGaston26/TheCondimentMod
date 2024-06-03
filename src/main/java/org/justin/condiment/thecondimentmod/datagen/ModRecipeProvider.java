@@ -104,6 +104,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('M',ModItems.MAYO.get())
                 .unlockedBy(getHasName(ModItems.MAYO.get()),has(ModItems.MAYO.get()))
                 .save(p_251297_,TheCondimentMod.MODID + "mayo_boots");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.PEPPER_PIKE.get())
+                .pattern("PSP")
+                .pattern("PS ")
+                .pattern(" S ")
+                .define('P',ModItems.RED_PEPPER.get())
+                .define('S',Items.STICK)
+                .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
+                .save(p_251297_,"pepper_pike");
 
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {

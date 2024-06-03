@@ -28,6 +28,7 @@ public class ModCreativeModeTabs {
                         p_259752_.accept(ModItems.MAYO_CHEST.get());
                         p_259752_.accept(ModItems.MAYO_LEGS.get());
                         p_259752_.accept(ModItems.MAYO_BOOTS.get());
+                        p_259752_.accept(ModItems.PEPPER_PIKE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus){

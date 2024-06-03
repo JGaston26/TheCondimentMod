@@ -11,6 +11,7 @@ import org.justin.condiment.thecondimentmod.TheCondimentMod;
 public class ModTags {
     public static class Blocks{
         public static final TagKey<Block> NEEDS_MAYO_TOOL = tag("needs_mayo_tool");
+        public static final TagKey<Block> NEEDS_PEPPER_TOOL = tag("needs_pepper_tool");
         private static TagKey<Block> tag(String name){
             return BlockTags.create(new ResourceLocation(TheCondimentMod.MODID,name));
         }
