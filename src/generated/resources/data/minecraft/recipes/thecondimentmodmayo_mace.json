@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "thecondimentmod:mayo"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "IMI",
+    "MSM",
+    " S "
+  ],
+  "result": {
+    "item": "thecondimentmod:a_mayo_mace"
+  },
+  "show_notification": true
+}

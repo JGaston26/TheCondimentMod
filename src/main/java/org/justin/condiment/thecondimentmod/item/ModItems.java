@@ -4,6 +4,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,6 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.justin.condiment.thecondimentmod.TheCondimentMod;
 import org.justin.condiment.thecondimentmod.fluid.ModFluid;
+import org.justin.condiment.thecondimentmod.item.custom.ModArmorItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> Items =
@@ -26,13 +28,13 @@ public class ModItems {
     public static final RegistryObject<Item> MAYO_MACE = Items.register("a_mayo_mace",
             () -> new SwordItem(ModToolTiers.MAYO,8,2,new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> MAYO_HELM = Items.register("mayo_helmet",
-            () -> new ArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> MAYO_CHEST = Items.register("mayo_chest",
-            () -> new ArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> MAYO_LEGS = Items.register("mayo_leggings",
-            () -> new ArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> MAYO_BOOTS = Items.register("mayo_boots",
-            () -> new ArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.BOOTS, new Item.Properties()));
     public static void register(IEventBus eventBus){
         Items.register(eventBus);
     }

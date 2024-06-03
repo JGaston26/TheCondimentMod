@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "thecondimentmod:mayo"
+    }
+  },
+  "pattern": [
+    "   ",
+    "M M",
+    "M M"
+  ],
+  "result": {
+    "item": "thecondimentmod:mayo_boots"
+  },
+  "show_notification": true
+}

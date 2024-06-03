@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_red_pepper": {
+    "has_mayo": {
       "conditions": {
         "items": [
           {
             "items": [
-              "thecondimentmod:red_pepper"
+              "thecondimentmod:mayo"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "thecondimentmod:red_pepper_from_blasting_red_pepper"
+        "recipe": "minecraft:thecondimentmodmayo_mace"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_red_pepper",
+      "has_mayo",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "thecondimentmod:red_pepper_from_blasting_red_pepper"
+      "minecraft:thecondimentmodmayo_mace"
     ]
   },
   "sends_telemetry_event": false
