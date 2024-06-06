@@ -53,6 +53,10 @@ public class ModItemModelGenerator extends ItemModelProvider {
         trimmedArmorItem(ModItems.MAYO_CHEST);
         trimmedArmorItem(ModItems.MAYO_LEGS);
         trimmedArmorItem(ModItems.MAYO_BOOTS);
+        trimmedArmorItem(ModItems.PEPPER_HELM);
+        trimmedArmorItem(ModItems.PEPPER_CHEST);
+        trimmedArmorItem(ModItems.PEPPER_LEGS);
+        trimmedArmorItem(ModItems.PEPPER_BOOTS);
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
             final String MOD_ID = TheCondimentMod.MODID;

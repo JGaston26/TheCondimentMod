@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 150,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "thecondimentmod:red_pepper"
+  },
+  "result": "thecondimentmod:smoked_red_pepper"
+}

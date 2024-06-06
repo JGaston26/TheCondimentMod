@@ -1,0 +1,4 @@
+// 1.20.1	2024-06-05T22:03:55.861587	Global Loot Modifiers : thecondimentmod
+ede05cb972df9f9230e698057a43ad51f9dd7a46 data/forge/loot_modifiers/global_loot_modifiers.json
+c01b07734013ef54041c60c012d5a3c42c252530 data/thecondimentmod/loot_modifiers/mayo_from_abandoned_mineshaft.json
+2a12c8f6a6f780cde60f6f9210115bc48b594ffd data/thecondimentmod/loot_modifiers/mayo_from_skeleton.json

@@ -112,6 +112,34 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S',Items.STICK)
                 .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
                 .save(p_251297_,"pepper_pike");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.PEPPER_HELM.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .define('P',ModItems.RED_PEPPER.get())
+                .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
+                .save(p_251297_,"pepper_helmet");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.PEPPER_CHEST.get())
+                .pattern("PWP")
+                .pattern("PWP")
+                .pattern("WWW")
+                .define('P',ModItems.RED_PEPPER.get())
+                .define('W',Items.WHITE_WOOL)
+                .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
+                .save(p_251297_,"pepper_chestplate");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.PEPPER_LEGS.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("P P")
+                .define('P',ModItems.RED_PEPPER.get())
+                .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
+                .save(p_251297_,"pepper_leggings");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.PEPPER_BOOTS.get())
+                .pattern("   ")
+                .pattern("P P")
+                .pattern("P P")
+                .define('P',ModItems.RED_PEPPER.get())
+                .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
+                .save(p_251297_,"pepper_boots");
 
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {

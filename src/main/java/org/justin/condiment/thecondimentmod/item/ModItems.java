@@ -23,6 +23,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.PEPPER)));
     public static final RegistryObject<Item> SMOKED_RED_PEPPER = Items.register("smoked_red_pepper",
             () -> new Item(new Item.Properties().food(ModFoods.PEPPER)));
+    public static final RegistryObject<Item> PEPPER_HELM = Items.register("pepper_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.RED_PEPPER,ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> PEPPER_CHEST = Items.register("pepper_chest",
+            () -> new ModArmorItem(ModArmorMaterials.RED_PEPPER,ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> PEPPER_LEGS = Items.register("pepper_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.RED_PEPPER,ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> PEPPER_BOOTS = Items.register("pepper_boots",
+            () -> new ModArmorItem(ModArmorMaterials.RED_PEPPER,ArmorItem.Type.BOOTS, new Item.Properties()));
     public static final RegistryObject<Item> BUCKET_O_MAYO = Items.register("bucket_o_mayo",
             ()-> new BucketItem(ModFluid.SOURCE_MAYO_LIQUID, new Item.Properties()));
     public static final RegistryObject<Item> PEPPER_PIKE = Items.register("pepper_pike",

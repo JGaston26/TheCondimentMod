@@ -9,6 +9,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.fml.common.Mod;
 import org.justin.condiment.thecondimentmod.item.ModArmorMaterials;
 
 import java.util.Map;
@@ -16,6 +17,8 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
+                    .put(ModArmorMaterials.RED_PEPPER,new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200,2
+                    , false,false,true))
                     .put(ModArmorMaterials.MAYO, new MobEffectInstance(MobEffects.JUMP,200,2
             ,false,false,true)).build();
     public ModArmorItem(ArmorMaterial p_40386_, Type p_266831_, Properties p_40388_) {

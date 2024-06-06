@@ -11,7 +11,10 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials  implements ArmorMaterial {
     MAYO("mayo",26,new int[]{5,7,5,4},25,
-            SoundEvents.HONEY_BLOCK_PLACE,1f,0f,()-> Ingredient.of(ModItems.MAYO.get()));
+            SoundEvents.HONEY_BLOCK_PLACE,1f,0f,()-> Ingredient.of(ModItems.MAYO.get())),
+    RED_PEPPER("pepper",25,new int[]{6,9,6,5},26,
+            SoundEvents.BLAZE_BURN,1f,1f,()-> Ingredient.of(ModItems.RED_PEPPER.get()));
+
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;
