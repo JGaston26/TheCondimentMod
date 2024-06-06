@@ -34,7 +34,9 @@ public class ModGlobalLootModifier extends GlobalLootModifierProvider {
         add("mayo_from_abandoned_mineshaft", new AddItemModifier(new LootItemCondition[]{
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/abandoned_mineshaft")).build(),
         LootItemRandomChanceCondition.randomChance(0.40f).build()},ModItems.MAYO.get()));
-
+        add("pepper_from_desert_pyramid", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/desert_pyramid")).build(),
+                LootItemRandomChanceCondition.randomChance(0.40f).build()},ModItems.RED_PEPPER.get()));
 
     }
 }

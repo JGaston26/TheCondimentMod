@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-04T17:18:06.5879367	Item Models: thecondimentmod
+// 1.20.1	2024-06-06T16:27:04.8019536	Item Models: thecondimentmod
 2cec116c170a7777b9e3c5b842ecbb6daf9a7f2b assets/thecondimentmod/models/item/bucket_o_mayo.json
 4b43dc2d9a49c2d55dcaec34dacad9c1ad95b1b0 assets/thecondimentmod/models/item/mayo.json
 b4235f4ed54e68040916553fba600493bbb015ae assets/thecondimentmod/models/item/mayo_boots.json
@@ -90,4 +90,5 @@ f046ad6c4f4a031088962f745b9bfc0bc8ce55a1 assets/thecondimentmod/models/item/pepp
 675991a7fde1eecb0ef00d6bc97e0b4c9139520d assets/thecondimentmod/models/item/pepper_leggings_quartz_trim.json
 4f04568ad18606eab266a3d52ac376b5764d522c assets/thecondimentmod/models/item/pepper_leggings_redstone_trim.json
 997b2249ecf20a837452f342790ad57f8ff8718c assets/thecondimentmod/models/item/red_pepper.json
+f84b4368bf01a9ec8df89c690cc1330a448deaa5 assets/thecondimentmod/models/item/red_pepper_seeds.json
 b3db2c01a970ab8a4356995d35a772bb7cfff59e assets/thecondimentmod/models/item/smoked_red_pepper.json

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:apple"
+    },
+    "L": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "pattern": [
+    "   ",
+    " A ",
+    " L "
+  ],
+  "result": {
+    "item": "thecondimentmod:red_pepper"
+  },
+  "show_notification": true
+}

@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                         p_259752_.accept(ModItems.PEPPER_CHEST.get());
                         p_259752_.accept(ModItems.PEPPER_LEGS.get());
                         p_259752_.accept(ModItems.PEPPER_BOOTS.get());
+                        p_259752_.accept(ModItems.RED_PEPPER_SEEDS.get());
 
                     })
                     .build());

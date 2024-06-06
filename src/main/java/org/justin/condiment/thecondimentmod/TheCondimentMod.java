@@ -95,7 +95,6 @@ public class TheCondimentMod {
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
-
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
@@ -103,7 +102,7 @@ public class TheCondimentMod {
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
-            //ItemBlockRenderTypes.setRenderLayer(ModFluid.SOURCE_MAYO_LIQUID.get(), RenderType.translucent());
+            //ItemBlockRenderTypes.setRenderLayer(ModFluid.SOURCE_MAYO_LIQUID.get(), RenderType.);
             //ItemBlockRenderTypes.setRenderLayer(ModFluid.FLOWING_MAYO_LIQUID.get(), RenderType.translucent());
         }
     }

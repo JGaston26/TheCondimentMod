@@ -1,4 +1,5 @@
-// 1.20.1	2024-06-05T22:03:55.861587	Global Loot Modifiers : thecondimentmod
-ede05cb972df9f9230e698057a43ad51f9dd7a46 data/forge/loot_modifiers/global_loot_modifiers.json
+// 1.20.1	2024-06-06T14:20:06.3483442	Global Loot Modifiers : thecondimentmod
+77f6041992c6d836e8f26f203390936c9595db42 data/forge/loot_modifiers/global_loot_modifiers.json
 c01b07734013ef54041c60c012d5a3c42c252530 data/thecondimentmod/loot_modifiers/mayo_from_abandoned_mineshaft.json
 2a12c8f6a6f780cde60f6f9210115bc48b594ffd data/thecondimentmod/loot_modifiers/mayo_from_skeleton.json
+6ef703772587f470b1759e1fe6f0ce7b4fc2ef00 data/thecondimentmod/loot_modifiers/pepper_from_desert_pyramid.json

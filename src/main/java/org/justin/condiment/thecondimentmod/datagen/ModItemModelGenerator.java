@@ -49,6 +49,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.RED_PEPPER);
         simpleItem(ModItems.SMOKED_RED_PEPPER);
         simpleItem(ModItems.BUCKET_O_MAYO);
+        simpleItem(ModItems.RED_PEPPER_SEEDS);
         trimmedArmorItem(ModItems.MAYO_HELM);
         trimmedArmorItem(ModItems.MAYO_CHEST);
         trimmedArmorItem(ModItems.MAYO_LEGS);

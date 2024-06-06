@@ -1,9 +1,6 @@
 package org.justin.condiment.thecondimentmod.item;
 
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.BucketItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.justin.condiment.thecondimentmod.TheCondimentMod;
+import org.justin.condiment.thecondimentmod.block.ModBlock;
 import org.justin.condiment.thecondimentmod.fluid.ModFluid;
 import org.justin.condiment.thecondimentmod.item.custom.ModArmorItem;
 
@@ -23,6 +21,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.PEPPER)));
     public static final RegistryObject<Item> SMOKED_RED_PEPPER = Items.register("smoked_red_pepper",
             () -> new Item(new Item.Properties().food(ModFoods.PEPPER)));
+    public static final RegistryObject<Item> RED_PEPPER_SEEDS = Items.register("red_pepper_seeds",
+            () -> new ItemNameBlockItem(ModBlock.PEPPER_CROP.get(),new Item.Properties()));
     public static final RegistryObject<Item> PEPPER_HELM = Items.register("pepper_helmet",
             () -> new ModArmorItem(ModArmorMaterials.RED_PEPPER,ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> PEPPER_CHEST = Items.register("pepper_chest",
