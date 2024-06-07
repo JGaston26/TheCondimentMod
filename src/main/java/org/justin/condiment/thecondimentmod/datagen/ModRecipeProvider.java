@@ -111,13 +111,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('P',ModItems.RED_PEPPER.get())
                 .define('S',Items.STICK)
                 .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
-                .save(p_251297_,"pepper_pike");
+                .save(p_251297_,TheCondimentMod.MODID + "pepper_pike");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.PEPPER_HELM.get())
                 .pattern("PPP")
                 .pattern("P P")
                 .define('P',ModItems.RED_PEPPER.get())
                 .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
-                .save(p_251297_,"pepper_helmet");
+                .save(p_251297_,TheCondimentMod.MODID +"pepper_helmet");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.PEPPER_CHEST.get())
                 .pattern("PWP")
                 .pattern("PWP")
@@ -125,21 +125,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('P',ModItems.RED_PEPPER.get())
                 .define('W',Items.WHITE_WOOL)
                 .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
-                .save(p_251297_,"pepper_chestplate");
+                .save(p_251297_,TheCondimentMod.MODID +"pepper_chestplate");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.PEPPER_LEGS.get())
                 .pattern("PPP")
                 .pattern("P P")
                 .pattern("P P")
                 .define('P',ModItems.RED_PEPPER.get())
                 .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
-                .save(p_251297_,"pepper_leggings");
+                .save(p_251297_,TheCondimentMod.MODID +"pepper_leggings");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.PEPPER_BOOTS.get())
                 .pattern("   ")
                 .pattern("P P")
                 .pattern("P P")
                 .define('P',ModItems.RED_PEPPER.get())
                 .unlockedBy(getHasName(ModItems.RED_PEPPER.get()),has(ModItems.RED_PEPPER.get()))
-                .save(p_251297_,"pepper_boots");
+                .save(p_251297_,TheCondimentMod.MODID +"pepper_boots");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.RED_PEPPER.get())
                 .pattern("   ")
                 .pattern(" A ")
@@ -147,7 +147,34 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', Items.APPLE)
                 .define('L',Items.LAVA_BUCKET)
                 .unlockedBy(getHasName(Items.APPLE),has(Items.APPLE))
-                .save(p_251297_,"pepper_crafting");
+                .save(p_251297_,TheCondimentMod.MODID +"pepper_crafting");
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.TOMATO_HELM.get())
+                .pattern("TTT")
+                .pattern("T T")
+                .define('T',ModItems.TOMATO.get())
+                .unlockedBy(getHasName(ModItems.TOMATO.get()),has(ModItems.TOMATO.get()))
+                .save(p_251297_,TheCondimentMod.MODID +"tomato_helmet");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.TOMATO_CHEST.get())
+                .pattern("T T")
+                .pattern("TTT")
+                .pattern("TTT")
+                .define('T',ModItems.TOMATO.get())
+                .unlockedBy(getHasName(ModItems.TOMATO.get()),has(ModItems.TOMATO.get()))
+                .save(p_251297_,TheCondimentMod.MODID +"tomato_chestplate");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.TOMATO_LEGS.get())
+                .pattern("TTT")
+                .pattern("T T")
+                .pattern("T T")
+                .define('T',ModItems.TOMATO.get())
+                .unlockedBy(getHasName(ModItems.TOMATO.get()),has(ModItems.TOMATO.get()))
+                .save(p_251297_,TheCondimentMod.MODID +"tomato_leggings");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.TOMATO_BOOTS.get())
+                .pattern("   ")
+                .pattern("T T")
+                .pattern("T T")
+                .define('T',ModItems.TOMATO.get())
+                .unlockedBy(getHasName(ModItems.TOMATO.get()),has(ModItems.TOMATO.get()))
+                .save(p_251297_,TheCondimentMod.MODID +"tomato_boots");
 
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {

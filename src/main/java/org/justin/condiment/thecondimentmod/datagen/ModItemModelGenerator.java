@@ -50,6 +50,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.SMOKED_RED_PEPPER);
         simpleItem(ModItems.BUCKET_O_MAYO);
         simpleItem(ModItems.RED_PEPPER_SEEDS);
+        simpleItem(ModItems.TOMATO);
         trimmedArmorItem(ModItems.MAYO_HELM);
         trimmedArmorItem(ModItems.MAYO_CHEST);
         trimmedArmorItem(ModItems.MAYO_LEGS);
@@ -58,6 +59,10 @@ public class ModItemModelGenerator extends ItemModelProvider {
         trimmedArmorItem(ModItems.PEPPER_CHEST);
         trimmedArmorItem(ModItems.PEPPER_LEGS);
         trimmedArmorItem(ModItems.PEPPER_BOOTS);
+        trimmedArmorItem(ModItems.TOMATO_HELM);
+        trimmedArmorItem(ModItems.TOMATO_CHEST);
+        trimmedArmorItem(ModItems.TOMATO_LEGS);
+        trimmedArmorItem(ModItems.TOMATO_BOOTS);
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
             final String MOD_ID = TheCondimentMod.MODID;

@@ -29,5 +29,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 ModItems.PEPPER_CHEST.get(),
                 ModItems.PEPPER_LEGS.get(),
                 ModItems.PEPPER_BOOTS.get());
+        /*
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.TOMATO_HELM.get(),
+                ModItems.TOMATO_CHEST.get(),
+                ModItems.TOMATO_LEGS.get(),
+                ModItems.TOMATO_BOOTS.get());
+
+         */
     }
 }

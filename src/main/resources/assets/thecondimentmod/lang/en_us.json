@@ -14,6 +14,11 @@
   "item.thecondimentmod.mayo_chest": "Mayo Chestplate",
   "item.thecondimentmod.mayo_leggings": "Mayo Leggings",
   "item.thecondimentmod.mayo_boots": "Mayo Boots",
+  "item.thecondimentmod.tomato": "Tomato",
+  "item.thecondimentmod.tomato_helmet": "Tomato Helmet",
+  "item.thecondimentmod.tomato_chestplate": "Tomato Chestplate",
+  "item.thecondimentmod.tomato_leggings": "Tomato Leggings",
+  "item.thecondimentmod.tomato_boots": "Tomato Boots",
   "block.thecondimentmod.mayo_block": "Block O'  Mayonnaise",
   "creative.condiment_mod_tab": "Condiment Mod Tab"
 }

@@ -34,6 +34,11 @@ public class ModCreativeModeTabs {
                         p_259752_.accept(ModItems.PEPPER_LEGS.get());
                         p_259752_.accept(ModItems.PEPPER_BOOTS.get());
                         p_259752_.accept(ModItems.RED_PEPPER_SEEDS.get());
+                        p_259752_.accept(ModItems.TOMATO.get());
+                        p_259752_.accept(ModItems.TOMATO_HELM.get());
+                        p_259752_.accept(ModItems.TOMATO_CHEST.get());
+                        p_259752_.accept(ModItems.TOMATO_LEGS.get());
+                        p_259752_.accept(ModItems.TOMATO_BOOTS.get());
 
                     })
                     .build());

@@ -19,8 +19,10 @@ public class ModArmorItem extends ArmorItem {
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmorMaterials.RED_PEPPER,new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200,2
                     , false,false,true))
-                    .put(ModArmorMaterials.MAYO, new MobEffectInstance(MobEffects.JUMP,200,2
-            ,false,false,true)).build();
+                    .put(ModArmorMaterials.MAYO, new MobEffectInstance(MobEffects.FIRE_RESISTANCE,200,2
+            ,false,false,true))
+                    .put(ModArmorMaterials.TOMATO, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,
+                            200,2,false,false,true)).build();
     public ModArmorItem(ArmorMaterial p_40386_, Type p_266831_, Properties p_40388_) {
         super(p_40386_, p_266831_, p_40388_);
     }

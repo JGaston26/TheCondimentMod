@@ -45,6 +45,17 @@ public class ModItems {
             () -> new ModArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> MAYO_BOOTS = Items.register("mayo_boots",
             () -> new ModArmorItem(ModArmorMaterials.MAYO,ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> TOMATO = Items.register("tomato",
+            ()-> new Item(new Item.Properties().food(ModFoods.Tomato)));
+    public static final RegistryObject<Item> TOMATO_HELM = Items.register("tomato_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.TOMATO,ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> TOMATO_CHEST = Items.register("tomato_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.TOMATO,ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> TOMATO_LEGS = Items.register("tomato_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.TOMATO,ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> TOMATO_BOOTS = Items.register("tomato_boots",
+            () -> new ModArmorItem(ModArmorMaterials.TOMATO,ArmorItem.Type.BOOTS, new Item.Properties()));
     public static void register(IEventBus eventBus){
         Items.register(eventBus);
     }
