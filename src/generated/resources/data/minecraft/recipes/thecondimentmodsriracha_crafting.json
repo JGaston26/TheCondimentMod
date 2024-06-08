@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "thecondimentmod:smoked_red_pepper"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "   ",
+    " P ",
+    " W "
+  ],
+  "result": {
+    "item": "thecondimentmod:bucket_of_sriracha"
+  },
+  "show_notification": true
+}

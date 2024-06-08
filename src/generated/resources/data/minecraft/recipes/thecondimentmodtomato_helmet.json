@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "thecondimentmod:tomato"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "T T"
+  ],
+  "result": {
+    "item": "thecondimentmod:tomato_helmet"
+  },
+  "show_notification": true
+}

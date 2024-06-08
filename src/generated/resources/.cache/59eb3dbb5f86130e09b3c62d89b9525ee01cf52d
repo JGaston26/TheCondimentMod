@@ -1,4 +1,6 @@
-// 1.20.1	2024-06-06T16:36:52.4299311	Loot Tables
+// 1.20.1	2024-06-08T00:36:39.1715657	Loot Tables
 49f16b0379fff7d1e2cf6d38bd4679b80dd81963 data/thecondimentmod/loot_tables/blocks/mayo_block.json
 468e34d6f42387830c300f7d60925478134d6015 data/thecondimentmod/loot_tables/blocks/mayo_liquid.json
 fa2ced49eae92168b09d8926ad70e3f0bfd242a6 data/thecondimentmod/loot_tables/blocks/red_pepper_crop.json
+51965d8141c23fe088313f803ad7da366ad6c4c0 data/thecondimentmod/loot_tables/blocks/sriracha_liquid.json
+aae269feef85176f57d3c5313bbb0fdd9cb472cf data/thecondimentmod/loot_tables/blocks/tomato_crop.json

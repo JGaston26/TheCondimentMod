@@ -175,6 +175,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('T',ModItems.TOMATO.get())
                 .unlockedBy(getHasName(ModItems.TOMATO.get()),has(ModItems.TOMATO.get()))
                 .save(p_251297_,TheCondimentMod.MODID +"tomato_boots");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.BUCKET_OF_SRIRACHA.get())
+                .pattern("   ")
+                .pattern(" P ")
+                .pattern(" W ")
+                .define('P',ModItems.SMOKED_RED_PEPPER.get())
+                .define('W',Items.WATER_BUCKET)
+                .unlockedBy(getHasName(ModItems.SMOKED_RED_PEPPER.get()),has(ModItems.SMOKED_RED_PEPPER.get()))
+                .save(p_251297_,TheCondimentMod.MODID + "sriracha_crafting");
 
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {

@@ -1,4 +1,5 @@
-// 1.20.1	2024-06-06T23:55:14.3618029	Item Models: thecondimentmod
+// 1.20.1	2024-06-08T00:15:59.7697837	Item Models: thecondimentmod
+76cc96ccaea44d6154aa7673a5cbb89cdb3b1d7f assets/thecondimentmod/models/item/bucket_of_sriracha.json
 2cec116c170a7777b9e3c5b842ecbb6daf9a7f2b assets/thecondimentmod/models/item/bucket_o_mayo.json
 4b43dc2d9a49c2d55dcaec34dacad9c1ad95b1b0 assets/thecondimentmod/models/item/mayo.json
 b4235f4ed54e68040916553fba600493bbb015ae assets/thecondimentmod/models/item/mayo_boots.json
@@ -137,3 +138,4 @@ a95a679162c44bab2d375475a06141fae839b27a assets/thecondimentmod/models/item/toma
 62d1334495b4fa30e56057cc1a9b947bc9108306 assets/thecondimentmod/models/item/tomato_leggings_netherite_trim.json
 12a24409fd0f86a19a588ff619488ece670f45ea assets/thecondimentmod/models/item/tomato_leggings_quartz_trim.json
 b529ddc28546b5d3fe5c478fe88562089c2e9bbc assets/thecondimentmod/models/item/tomato_leggings_redstone_trim.json
+b154ffbd37b2b9293e00887d8b2b6ed41f545963 assets/thecondimentmod/models/item/tomato_seeds.json

@@ -54,6 +54,7 @@ public class BaseFluidType extends FluidType {
     @Override
     public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
         consumer.accept(new IClientFluidTypeExtensions() {
+
             @Override
             public ResourceLocation getStillTexture() {
                 return stillTexture;

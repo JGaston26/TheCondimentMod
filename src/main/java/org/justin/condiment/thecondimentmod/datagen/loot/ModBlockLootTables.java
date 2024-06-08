@@ -34,12 +34,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlock.MAYO_BLOCK.get());
         this.dropSelf(ModBlock.MAYO_LIQUID.get());
-        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+        this.dropSelf(ModBlock.SRIRACHA_LIQUID.get());
+        LootItemCondition.Builder Pepperlootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlock.PEPPER_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PepperCropBlock.AGE, 4));
+        LootItemCondition.Builder Tomatolootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlock.TOMATO_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PepperCropBlock.AGE, 4));
 
         this.add(ModBlock.PEPPER_CROP.get(), createCropDrops(ModBlock.PEPPER_CROP.get(), ModItems.RED_PEPPER.get(),
-                ModItems.RED_PEPPER_SEEDS.get(), lootitemcondition$builder));
+                ModItems.RED_PEPPER_SEEDS.get(), Pepperlootitemcondition$builder));
+
+        this.add(ModBlock.TOMATO_CROP.get(),createCropDrops(ModBlock.TOMATO_CROP.get(), ModItems.TOMATO.get(),
+                ModItems.TOMATO_SEEDS.get(),Tomatolootitemcondition$builder));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item){

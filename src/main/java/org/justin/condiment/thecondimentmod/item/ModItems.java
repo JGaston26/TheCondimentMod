@@ -2,6 +2,7 @@ package org.justin.condiment.thecondimentmod.item;
 
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -9,6 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.justin.condiment.thecondimentmod.TheCondimentMod;
 import org.justin.condiment.thecondimentmod.block.ModBlock;
+import org.justin.condiment.thecondimentmod.block.custom.TomatoCropBlock;
 import org.justin.condiment.thecondimentmod.fluid.ModFluid;
 import org.justin.condiment.thecondimentmod.item.custom.ModArmorItem;
 
@@ -31,6 +33,8 @@ public class ModItems {
             () -> new ModArmorItem(ModArmorMaterials.RED_PEPPER,ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> PEPPER_BOOTS = Items.register("pepper_boots",
             () -> new ModArmorItem(ModArmorMaterials.RED_PEPPER,ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> BUCKET_OF_SRIRACHA = Items.register("bucket_of_sriracha",
+            ()-> new BucketItem(ModFluid.SOURCE_SRIRACHA_LIQUID, new Item.Properties()));
     public static final RegistryObject<Item> BUCKET_O_MAYO = Items.register("bucket_o_mayo",
             ()-> new BucketItem(ModFluid.SOURCE_MAYO_LIQUID, new Item.Properties()));
     public static final RegistryObject<Item> PEPPER_PIKE = Items.register("pepper_pike",
@@ -56,6 +60,9 @@ public class ModItems {
             () -> new ModArmorItem(ModArmorMaterials.TOMATO,ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> TOMATO_BOOTS = Items.register("tomato_boots",
             () -> new ModArmorItem(ModArmorMaterials.TOMATO,ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item>  TOMATO_SEEDS = Items.register("tomato_seeds",
+            ()-> new ItemNameBlockItem(ModBlock.TOMATO_CROP.get(),new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         Items.register(eventBus);
     }

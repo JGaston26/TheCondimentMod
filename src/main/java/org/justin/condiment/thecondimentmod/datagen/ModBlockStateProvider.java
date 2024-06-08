@@ -12,6 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 import org.justin.condiment.thecondimentmod.TheCondimentMod;
 import org.justin.condiment.thecondimentmod.block.ModBlock;
 import org.justin.condiment.thecondimentmod.block.custom.PepperCropBlock;
+import org.justin.condiment.thecondimentmod.block.custom.TomatoCropBlock;
 
 import java.util.function.Function;
 
@@ -24,9 +25,10 @@ public class ModBlockStateProvider extends BlockStateProvider{
     @Override
     protected void registerStatesAndModels() {
         blockWihItem(ModBlock.MAYO_BLOCK);
-        makeStrawberryCrop((CropBlock) ModBlock.PEPPER_CROP.get(), "red_pepper_stage","red_pepper_stage");
+        makePepperCrop((CropBlock) ModBlock.PEPPER_CROP.get(), "red_pepper_stage","red_pepper_stage");
+        makeTomatoCrop((CropBlock) ModBlock.TOMATO_CROP.get(),"tomato_stage","tomato_stage");
     }
-    public void makeStrawberryCrop(CropBlock block, String modelName, String textureName) {
+    public void makePepperCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> pepperCropStates(state, block, modelName, textureName);
 
         getVariantBuilder(block).forAllStates(function);
@@ -35,6 +37,18 @@ public class ModBlockStateProvider extends BlockStateProvider{
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((PepperCropBlock) block).getAgeProperty()),
                 new ResourceLocation(TheCondimentMod.MODID, "block/" + textureName + state.getValue(((PepperCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+    public void makeTomatoCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> tomatoCropStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+    private ConfiguredModel[] tomatoCropStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((TomatoCropBlock) block).getAgeProperty()),
+                new ResourceLocation(TheCondimentMod.MODID, "block/" + textureName + state.getValue(((TomatoCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }
