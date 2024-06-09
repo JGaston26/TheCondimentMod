@@ -1,0 +1,14 @@
+{
+  "mayo_monster_ambient": {
+    "subtitles": "sounds.thecondimentmod.mayo_monster_ambient",
+    "sounds": [
+      "thecondimentmod:mayo_monster_ambient"
+    ]
+  },
+  "mayo_monster_hit": {
+    "subtitle": "sounds.theconidmentmod.mayo_monster_hit",
+    "sounds": [
+      "thecondimentmod:mayo_monster_hit"
+    ]
+  }
+}

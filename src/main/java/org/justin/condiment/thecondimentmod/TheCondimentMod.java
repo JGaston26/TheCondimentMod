@@ -39,6 +39,7 @@ import org.justin.condiment.thecondimentmod.fluid.ModFluidTypes;
 import org.justin.condiment.thecondimentmod.item.ModCreativeModeTabs;
 import org.justin.condiment.thecondimentmod.item.ModItems;
 import org.justin.condiment.thecondimentmod.loot.ModLootModifiers;
+import org.justin.condiment.thecondimentmod.sound.ModSounds;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -60,6 +61,7 @@ public class TheCondimentMod {
         ModFluid.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModSounds.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

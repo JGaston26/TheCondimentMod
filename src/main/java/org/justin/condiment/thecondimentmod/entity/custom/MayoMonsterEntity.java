@@ -1,5 +1,7 @@
 package org.justin.condiment.thecondimentmod.entity.custom;
 
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -10,6 +12,8 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import org.checkerframework.checker.units.qual.A;
+import org.jetbrains.annotations.Nullable;
+import org.justin.condiment.thecondimentmod.sound.ModSounds;
 
 public class MayoMonsterEntity extends Monster {
     public MayoMonsterEntity(EntityType<? extends Monster> p_33002_, Level p_33003_) {
@@ -35,5 +39,32 @@ public class MayoMonsterEntity extends Monster {
         this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, true));
         this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.MAYO_MONSTER_AMBIENT.get();
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return ModSounds.MAYO_MONSTER_AMBIENT.get();
+    }
+
+    @Override
+    public void playAmbientSound() {
+        getAmbientSound();
+    }
+
+    @Override
+    protected void playHurtSound(DamageSource p_21493_) {
+        getHurtSound(p_21493_);
+    }
+
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource p_33034_) {
+        return ModSounds.MAYO_MONSTER_HIT.get();
     }
 }
