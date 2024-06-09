@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -30,6 +32,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.justin.condiment.thecondimentmod.block.ModBlock;
+import org.justin.condiment.thecondimentmod.entity.ModEntities;
+import org.justin.condiment.thecondimentmod.entity.client.MayoMonsterRenderer;
 import org.justin.condiment.thecondimentmod.fluid.ModFluid;
 import org.justin.condiment.thecondimentmod.fluid.ModFluidTypes;
 import org.justin.condiment.thecondimentmod.item.ModCreativeModeTabs;
@@ -55,6 +59,7 @@ public class TheCondimentMod {
         ModFluidTypes.register(modEventBus);
         ModFluid.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModEntities.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -101,6 +106,8 @@ public class TheCondimentMod {
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            EntityRenderers.register(ModEntities.MAYO_MONSTER.get(), MayoMonsterRenderer::new);
+
 
             //ItemBlockRenderTypes.setRenderLayer(ModFluid.SOURCE_MAYO_LIQUID.get(), RenderType.);
             //ItemBlockRenderTypes.setRenderLayer(ModFluid.FLOWING_MAYO_LIQUID.get(), RenderType.translucent());
