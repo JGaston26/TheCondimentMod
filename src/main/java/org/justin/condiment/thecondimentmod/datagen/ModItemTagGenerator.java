@@ -6,8 +6,10 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 import org.justin.condiment.thecondimentmod.TheCondimentMod;
+import org.justin.condiment.thecondimentmod.block.ModBlock;
 import org.justin.condiment.thecondimentmod.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
@@ -34,7 +36,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 ModItems.TOMATO_CHEST.get(),
                 ModItems.TOMATO_LEGS.get(),
                 ModItems.TOMATO_BOOTS.get());
-
-
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlock.MAYO_WOOD.get().asItem())
+                .add(ModBlock.MAYO_LOG.get().asItem());
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlock.MAYO_PLANK.get().asItem());
+        this.tag(ItemTags.LEAVES)
+                .add(ModBlock.MAYO_LEAVES.get().asItem());
     }
 }

@@ -21,6 +21,14 @@
   "item.thecondimentmod.tomato_chestplate": "Tomato Chestplate",
   "item.thecondimentmod.tomato_leggings": "Tomato Leggings",
   "item.thecondimentmod.tomato_boots": "Tomato Boots",
+  "item.thecondimentmod.mayo_monster_spawnegg": "The Mayo Monster Spawnegg",
+  "item.thecondimentmod.throwable_tomato": "Tomato Projectile",
   "block.thecondimentmod.mayo_block": "Block O'  Mayonnaise",
+  "block.thecondimentmod.the_condiment_creator": "Condiment Creator Block",
+  "block.thecondimentmod.mayo_leaves": "Mayo Leaves",
+  "block.thecondimentmod.mayo_wood": "Mayo Wood",
+  "block.thecondimentmod.mayo_log": "Mayo Log",
+  "block.thecondimentmod.mayo_plank": "Mayo Plank",
+  "block.thecondimentmod.mayo_sapling": "Mayo Sapling",
   "creative.condiment_mod_tab": "Condiment Mod Tab"
 }

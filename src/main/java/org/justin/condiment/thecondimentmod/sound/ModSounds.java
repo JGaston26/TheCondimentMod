@@ -20,7 +20,7 @@ public class ModSounds {
     }
     public static final RegistryObject<SoundEvent> MAYO_MONSTER_HIT = registerSoundEvents("mayo_monster_hit");
     public static final RegistryObject<SoundEvent> MAYO_MONSTER_AMBIENT = registerSoundEvents("mayo_monster_ambient");
-
+    public static final RegistryObject<SoundEvent> CONDIMENT_BIOME_AMBIENT = registerSoundEvents("condiment_biome_ambient");
     public static void register(IEventBus event){
         SOUNDS.register(event);
     }

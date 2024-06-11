@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-08T00:15:59.7697837	Item Models: thecondimentmod
+// 1.20.1	2024-06-10T22:58:40.3480315	Item Models: thecondimentmod
 76cc96ccaea44d6154aa7673a5cbb89cdb3b1d7f assets/thecondimentmod/models/item/bucket_of_sriracha.json
 2cec116c170a7777b9e3c5b842ecbb6daf9a7f2b assets/thecondimentmod/models/item/bucket_o_mayo.json
 4b43dc2d9a49c2d55dcaec34dacad9c1ad95b1b0 assets/thecondimentmod/models/item/mayo.json
@@ -46,6 +46,8 @@ ff0b3e3759e3a1ff2b09237f939d6f055b38fecc assets/thecondimentmod/models/item/mayo
 064d415fd531362d8ab5b0357c092c5057c664f5 assets/thecondimentmod/models/item/mayo_leggings_netherite_trim.json
 39e2e4875e5bc0449f9491683940d54b104208bb assets/thecondimentmod/models/item/mayo_leggings_quartz_trim.json
 67fd1b865034634b3c746a27a9b75761126a208e assets/thecondimentmod/models/item/mayo_leggings_redstone_trim.json
+67e9ffc7d99dec68ecc42e8d0bc159e51a67cc71 assets/thecondimentmod/models/item/mayo_monster_spawnegg.json
+9bd60408c082f5e00b96f3b77587da9465b29799 assets/thecondimentmod/models/item/mayo_sapling.json
 1fa9859f27b18984296984a912846e0651dff555 assets/thecondimentmod/models/item/pepper_boots.json
 1b32899430cc0382d66647bff9460843f2a249e4 assets/thecondimentmod/models/item/pepper_boots_amethyst_trim.json
 ebc926668636b5e41f5dbb01982a8f76898b684c assets/thecondimentmod/models/item/pepper_boots_copper_trim.json
@@ -93,6 +95,7 @@ f046ad6c4f4a031088962f745b9bfc0bc8ce55a1 assets/thecondimentmod/models/item/pepp
 997b2249ecf20a837452f342790ad57f8ff8718c assets/thecondimentmod/models/item/red_pepper.json
 f84b4368bf01a9ec8df89c690cc1330a448deaa5 assets/thecondimentmod/models/item/red_pepper_seeds.json
 b3db2c01a970ab8a4356995d35a772bb7cfff59e assets/thecondimentmod/models/item/smoked_red_pepper.json
+d0e0dabdca34f1dca344bb367104ee8bfa7edfdd assets/thecondimentmod/models/item/throwable_tomato.json
 1701845d05319373a9ccdca7d226c50b4cd4e0c9 assets/thecondimentmod/models/item/tomato.json
 b3ba5fc39835dff1ee43ba87c87aaf555fbfa5b9 assets/thecondimentmod/models/item/tomato_boots.json
 e17ee68865bd8ea4734eb5b8b2aa9f2a7a608614 assets/thecondimentmod/models/item/tomato_boots_amethyst_trim.json

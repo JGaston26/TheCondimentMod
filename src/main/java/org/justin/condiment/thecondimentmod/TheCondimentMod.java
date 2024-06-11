@@ -4,8 +4,10 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -40,7 +42,11 @@ import org.justin.condiment.thecondimentmod.item.ModCreativeModeTabs;
 import org.justin.condiment.thecondimentmod.item.ModItems;
 import org.justin.condiment.thecondimentmod.loot.ModLootModifiers;
 import org.justin.condiment.thecondimentmod.sound.ModSounds;
+import org.justin.condiment.thecondimentmod.worldgen.biome.ModTerrablender;
+import org.justin.condiment.thecondimentmod.worldgen.biome.surface.ModSurfaceRules;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
+import terrablender.core.TerraBlender;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TheCondimentMod.MODID)
@@ -62,6 +68,7 @@ public class TheCondimentMod {
         ModLootModifiers.register(modEventBus);
         ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModTerrablender.registerBiomes();
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -77,6 +84,9 @@ public class TheCondimentMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, ModSurfaceRules.makeRules());
+        });
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
@@ -108,7 +118,9 @@ public class TheCondimentMod {
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
             EntityRenderers.register(ModEntities.MAYO_MONSTER.get(), MayoMonsterRenderer::new);
+            EntityRenderers.register(ModEntities.TOMATO_PROJECTILE.get(), ThrownItemRenderer::new);
 
 
             //ItemBlockRenderTypes.setRenderLayer(ModFluid.SOURCE_MAYO_LIQUID.get(), RenderType.);

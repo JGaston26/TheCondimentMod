@@ -6,6 +6,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 import org.justin.condiment.thecondimentmod.TheCondimentMod;
 import org.justin.condiment.thecondimentmod.block.ModBlock;
@@ -27,5 +28,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlock.MAYO_BLOCK.get());
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
         this.tag(ModTags.Blocks.NEEDS_MAYO_TOOL);
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlock.MAYO_LOG.get())
+                .add(ModBlock.STRIPPED_MAYO_LOG.get())
+                .add(ModBlock.STRIPPED_MAYO_WOOD.get());
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlock.MAYO_PLANK.get());
+        this.tag(BlockTags.LEAVES)
+                .add(ModBlock.MAYO_LEAVES.get());
     }
 }

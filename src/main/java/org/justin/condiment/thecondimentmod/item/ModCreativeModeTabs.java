@@ -41,6 +41,14 @@ public class ModCreativeModeTabs {
                         p_259752_.accept(ModItems.TOMATO_LEGS.get());
                         p_259752_.accept(ModItems.TOMATO_BOOTS.get());
                         p_259752_.accept(ModItems.TOMATO_SEEDS.get());
+                        p_259752_.accept(ModBlock.MAYO_LEAVES.get());
+                        p_259752_.accept(ModBlock.MAYO_PLANK.get());
+                        p_259752_.accept(ModBlock.MAYO_WOOD.get());
+                        p_259752_.accept(ModBlock.MAYO_LOG.get());
+                        p_259752_.accept(ModItems.MAYO_MONSTER_SPAWNEGG.get());
+                        p_259752_.accept(ModItems.THROWABLE_TOMATO.get());
+                        p_259752_.accept(ModBlock.MAYO_SAPLING.get());
+                        p_259752_.accept(ModBlock.THE_CONDIMENT_CREATOR.get());
 
                     })
                     .build());

@@ -1,5 +1,8 @@
-// 1.20.1	2024-06-01T22:22:34.188511	Tags for minecraft:block mod id thecondimentmod
+// 1.20.1	2024-06-10T19:46:29.8924556	Tags for minecraft:block mod id thecondimentmod
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+9ad50360bf8b455eb53454c9e80bdf047ab43f46 data/minecraft/tags/blocks/leaves.json
+89d24e9e18d130b372e986601a9b0d38c2e82baa data/minecraft/tags/blocks/logs_that_burn.json
 93087182a646debe74ed5bf1cfbbc14ffc00da17 data/minecraft/tags/blocks/mineable/pickaxe.json
 93087182a646debe74ed5bf1cfbbc14ffc00da17 data/minecraft/tags/blocks/needs_iron_tool.json
+6dda63ead1c10a11cfaa1d55ce38936a7c61cd1c data/minecraft/tags/blocks/planks.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/thecondimentmod/tags/blocks/needs_mayo_tool.json

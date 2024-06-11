@@ -8,6 +8,7 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import org.justin.condiment.thecondimentmod.TheCondimentMod;
+import org.justin.condiment.thecondimentmod.loot.ModWorldGenProvider;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -31,5 +32,6 @@ public class DataGenerators {
         generators.addProvider(event.includeServer(),new ModItemTagGenerator(packOutput,lookupProvider,blockTagGenerator.contentsGetter(),existingFileHelper));
 
         generators.addProvider(event.includeServer(),new ModGlobalLootModifier(packOutput));
+        generators.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
     }
 }

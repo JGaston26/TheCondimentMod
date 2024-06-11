@@ -1,6 +1,14 @@
-// 1.20.1	2024-06-08T00:36:39.1715657	Loot Tables
+// 1.20.1	2024-06-10T22:58:40.3440199	Loot Tables
 49f16b0379fff7d1e2cf6d38bd4679b80dd81963 data/thecondimentmod/loot_tables/blocks/mayo_block.json
+dddb7526ed103da2f50030400cadc9bdd6ea6220 data/thecondimentmod/loot_tables/blocks/mayo_leaves.json
 468e34d6f42387830c300f7d60925478134d6015 data/thecondimentmod/loot_tables/blocks/mayo_liquid.json
+9a2e9c02e992c07355b9b3fe0ff9d20226644225 data/thecondimentmod/loot_tables/blocks/mayo_log.json
+639c057692f3319361c19d91d027d20d0bf686b4 data/thecondimentmod/loot_tables/blocks/mayo_plank.json
+5917c36e846e4667503d1343da2ebd2abec54022 data/thecondimentmod/loot_tables/blocks/mayo_sapling.json
+7cf9dda4d239627d8f0104f6ef6414766b3dbad4 data/thecondimentmod/loot_tables/blocks/mayo_wood.json
 fa2ced49eae92168b09d8926ad70e3f0bfd242a6 data/thecondimentmod/loot_tables/blocks/red_pepper_crop.json
 51965d8141c23fe088313f803ad7da366ad6c4c0 data/thecondimentmod/loot_tables/blocks/sriracha_liquid.json
+0350fd8d57e588d1e2688ad0a7e5877747857928 data/thecondimentmod/loot_tables/blocks/stripped_mayo_log.json
+9b0ac5bfd809fa8206462552a25a7fad20ae6e7f data/thecondimentmod/loot_tables/blocks/stripped_mayo_wood.json
+cac856711fb9872f8d097257d928e4507e613cae data/thecondimentmod/loot_tables/blocks/the_condiment_creator.json
 aae269feef85176f57d3c5313bbb0fdd9cb472cf data/thecondimentmod/loot_tables/blocks/tomato_crop.json

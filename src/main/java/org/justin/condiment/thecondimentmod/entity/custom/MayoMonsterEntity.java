@@ -1,8 +1,12 @@
 package org.justin.condiment.thecondimentmod.entity.custom;
 
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -19,6 +23,36 @@ public class MayoMonsterEntity extends Monster {
     public MayoMonsterEntity(EntityType<? extends Monster> p_33002_, Level p_33003_) {
         super(p_33002_, p_33003_);
     }
+    public final AnimationState idleAnimationState = new AnimationState();
+    private int idleAnimationTimeout = 0;
+
+    @Override
+    public void tick() {
+        super.tick();
+        if(this.level().isClientSide()){
+            setupAnimationStates();
+        }
+    }
+    private void setupAnimationStates(){
+        if(this.idleAnimationTimeout <= 0){
+            this.idleAnimationTimeout = this.random.nextInt(40)*80;
+            this.idleAnimationState.start(this.tickCount);
+        }else{
+            --this.idleAnimationTimeout;
+        }
+    }
+
+    @Override
+    protected void updateWalkAnimation(float p_268283_) {
+        float f;
+        if(this.getPose() == Pose.STANDING){
+            f = Math.min(p_268283_ *6F,1F);
+        }else{
+            f = 0f;
+        }
+        this.walkAnimation.update(f,0.2F);
+    }
+
     public static AttributeSupplier.Builder createAtributes(){
         return Monster.createMonsterAttributes()
                 .add(Attributes.ATTACK_DAMAGE,7f)
@@ -44,24 +78,14 @@ public class MayoMonsterEntity extends Monster {
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return ModSounds.MAYO_MONSTER_AMBIENT.get();
+        return SoundEvents.DROWNED_AMBIENT;
+        //return ModSounds.MAYO_MONSTER_AMBIENT.get();
     }
 
     @Override
     protected SoundEvent getDeathSound() {
         return ModSounds.MAYO_MONSTER_AMBIENT.get();
     }
-
-    @Override
-    public void playAmbientSound() {
-        getAmbientSound();
-    }
-
-    @Override
-    protected void playHurtSound(DamageSource p_21493_) {
-        getHurtSound(p_21493_);
-    }
-
 
     @Override
     protected SoundEvent getHurtSound(DamageSource p_33034_) {

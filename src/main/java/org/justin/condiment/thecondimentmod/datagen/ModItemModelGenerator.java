@@ -9,6 +9,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -16,6 +17,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import org.justin.condiment.thecondimentmod.TheCondimentMod;
+import org.justin.condiment.thecondimentmod.block.ModBlock;
 import org.justin.condiment.thecondimentmod.item.ModItems;
 
 import java.util.LinkedHashMap;
@@ -52,7 +54,10 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.RED_PEPPER_SEEDS);
         simpleItem(ModItems.TOMATO_SEEDS);
         simpleItem(ModItems.TOMATO);
+        simpleItem(ModItems.MAYO_MONSTER_SPAWNEGG);
         simpleItem(ModItems.BUCKET_OF_SRIRACHA);
+        simpleItem(ModItems.THROWABLE_TOMATO);
+        saplingItem(ModBlock.MAYO_SAPLING);
         trimmedArmorItem(ModItems.MAYO_HELM);
         trimmedArmorItem(ModItems.MAYO_CHEST);
         trimmedArmorItem(ModItems.MAYO_LEGS);
@@ -111,7 +116,11 @@ public class ModItemModelGenerator extends ItemModelProvider {
             });
         }
     }
-
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TheCondimentMod.MODID,"block/" + item.getId().getPath()));
+    }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
         return withExistingParent(item.getId().getPath(),

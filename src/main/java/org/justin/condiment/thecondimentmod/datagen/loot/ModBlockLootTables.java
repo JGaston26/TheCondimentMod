@@ -35,9 +35,21 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlock.MAYO_BLOCK.get());
         this.dropSelf(ModBlock.MAYO_LIQUID.get());
         this.dropSelf(ModBlock.SRIRACHA_LIQUID.get());
+        this.dropSelf(ModBlock.THE_CONDIMENT_CREATOR.get());
+        this.dropSelf(ModBlock.MAYO_WOOD.get());
+        this.dropSelf(ModBlock.MAYO_LOG.get());
+        this.dropSelf(ModBlock.STRIPPED_MAYO_LOG.get());
+        this.dropSelf(ModBlock.STRIPPED_MAYO_WOOD.get());
+        this.dropSelf(ModBlock.MAYO_PLANK.get());
+        this.dropSelf(ModBlock.MAYO_SAPLING.get());
+        this.add(ModBlock.MAYO_LEAVES.get(),
+                block -> createLeavesDrops(block,ModBlock.MAYO_BLOCK.get(),
+                        NORMAL_LEAVES_SAPLING_CHANCES));
+
         LootItemCondition.Builder Pepperlootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlock.PEPPER_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PepperCropBlock.AGE, 4));
+
         LootItemCondition.Builder Tomatolootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlock.TOMATO_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PepperCropBlock.AGE, 4));

@@ -1,2 +1,5 @@
-// 1.20.1	2024-06-07T09:05:26.2014623	Tags for minecraft:item mod id thecondimentmod
+// 1.20.1	2024-06-10T19:46:29.8894757	Tags for minecraft:item mod id thecondimentmod
+9ad50360bf8b455eb53454c9e80bdf047ab43f46 data/minecraft/tags/items/leaves.json
+64f28a4d5099889f69e1d2bd1516533353834549 data/minecraft/tags/items/logs_that_burn.json
+6dda63ead1c10a11cfaa1d55ce38936a7c61cd1c data/minecraft/tags/items/planks.json
 17a26bdb4c0dad091369d2916e65990f0a85fa8d data/minecraft/tags/items/trimmable_armor.json

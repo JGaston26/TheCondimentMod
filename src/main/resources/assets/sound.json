@@ -10,5 +10,13 @@
     "sounds": [
       "thecondimentmod:mayo_monster_hit"
     ]
-  }
+  },
+  "condiment_biome_ambient": {
+  "sounds": [
+    {
+      "name": "thecondimentmod:condiment_biome_ambient",
+      "stream": true
+    }
+    ]
+    }
 }
