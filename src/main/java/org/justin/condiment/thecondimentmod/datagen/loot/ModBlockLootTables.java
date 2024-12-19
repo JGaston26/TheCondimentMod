@@ -35,7 +35,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlock.MAYO_BLOCK.get());
         this.dropSelf(ModBlock.MAYO_LIQUID.get());
         this.dropSelf(ModBlock.SRIRACHA_LIQUID.get());
-        this.dropSelf(ModBlock.THE_CONDIMENT_CREATOR.get());
         this.dropSelf(ModBlock.MAYO_WOOD.get());
         this.dropSelf(ModBlock.MAYO_LOG.get());
         this.dropSelf(ModBlock.STRIPPED_MAYO_LOG.get());

@@ -30,8 +30,6 @@ public class ModBlockStateProvider extends BlockStateProvider{
     @Override
     protected void registerStatesAndModels() {
         blockWihItem(ModBlock.MAYO_BLOCK);
-        simpleBlock(ModBlock.THE_CONDIMENT_CREATOR.get(),
-                new ModelFile.UncheckedModelFile("block/condimentcreatortexture.png"));
         makePepperCrop((CropBlock) ModBlock.PEPPER_CROP.get(), "red_pepper_stage","red_pepper_stage");
         makeTomatoCrop((CropBlock) ModBlock.TOMATO_CROP.get(),"tomato_stage","tomato_stage");
         logBlock((RotatedPillarBlock) ModBlock.MAYO_LOG.get());
